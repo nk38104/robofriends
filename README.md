@@ -13,13 +13,7 @@ This project contains the fundamental concepts used in every real web project li
    * [RoboHash](https://robohash.org/)
    * [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
-## Dependencies
-
-|  Dependency | Description  |
-|---|---|
-| [Create React App](https://github.com/facebook/create-react-app)  |  Set up a modern web app by running one command. |
-| [Tachyons](https://tachyons.io/)  |  Functional css for humans  |
-| [Redux](https://es.redux.js.org/) | A Predictable State Container for JS Apps |
+## How to run the project
 
 To run the project:
 
@@ -28,7 +22,15 @@ To run the project:
 3. Run `npm install`
 4. Run `npm start`
 
-## Technologies used
+## Dependencies
+
+|  Dependency | Description  |
+|---|---|
+| [Create React App](https://github.com/facebook/create-react-app)  |  Set up a modern web app by running one command. |
+| [Tachyons](https://tachyons.io/)  |  Functional css for humans  |
+| [Redux](https://es.redux.js.org/) | A Predictable State Container for JS Apps |
+
+## Technologies
 
 ### Front-End
 - HTML/5
