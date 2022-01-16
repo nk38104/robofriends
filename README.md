@@ -21,16 +21,18 @@ This project contains the fundamental concepts used in every real web project li
 | [Tachyons](https://tachyons.io/)  |  Functional css for humans  |
 | [Redux](https://es.redux.js.org/) | A Predictable State Container for JS Apps |
 
+## Technologies
+
+### Front-End
+- HTML/5
+- CSS/3
+- React.js
+
+## How to run the project
+
 To run the project:
 
 1. Clone this repo
 2. Change your directory: `cd robofriends`
 3. Run `npm install`
 4. Run `npm start`
-
-## Technologies used
-
-### Front-End
-- HTML/5
-- CSS/3
-- React.js
