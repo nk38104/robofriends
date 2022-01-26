@@ -1,0 +1,12 @@
+{
+    "short_name": "Robofriends",
+    "name": "React App",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone"
+  }
