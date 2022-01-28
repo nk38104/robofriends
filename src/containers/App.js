@@ -2,9 +2,9 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import { bindActionCreators } from 'redux';
 import { useSelector, useDispatch } from 'react-redux';
-import Header from '../components/Header';
+import Header from '../components/header/Header';
 import CardList from '../components/CardList';
-import SearchBox from '../components/SearchBox';
+import SearchBox from '../components/header/SearchBox';
 import ErrorBoundry from '../components/errors/ErrorBoundry';
 import { actionCreators } from '../state/index';
 import SignIn from '../components/auth/signin/SignIn';
@@ -44,8 +44,8 @@ function App() {
         ? (
             <div className="tc">
                 <Header>
-                    <h1>RoboFriends</h1>
-                    <SearchBox searchChange={(event) => setSearchField(event.target.value)}/>
+                    <h1 className="brand">RoboFriends</h1>
+                    <SearchBox searchChange={(e) => setSearchField(e.target.value)}/>
                 </Header>
                 <div className="main">
                     <ErrorBoundry>

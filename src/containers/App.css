@@ -5,12 +5,13 @@
     src: local('GUMBALL FONT'), url('Gumball.ttf') format('truetype');
 }
 
-h1 {
-    color: #0ccac4;
+.brand {
     font-family: 'GUMBALL FONT';
     font-weight: 500;
     font-size: 64px;
-    padding-top: 30px;
+    color: #0ccac4;
+    margin: 20px 0;
+    padding-top: 10px;
 }
 
 .main {

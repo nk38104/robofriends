@@ -1,3 +1,4 @@
+
 .signin {
     display: flex;
     justify-content: center;
@@ -7,14 +8,17 @@
 }
 
 .h1 {
+    font-family: 'GUMBALL FONT';
+    font-weight: 500;
     font-size: 64px;
+    color: #0ccac4;
     margin-bottom: 50px;
 }
 
 .form {
     display: grid;
     text-align: center;
-    width: 500px;
+    width: 40%;
     border: 3px solid black;
 }
 
@@ -50,4 +54,16 @@
 .button:hover {
     color: black;
     background: #0ccac4cb;
+}
+
+@media screen and (max-width: 600px){
+    .form {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    .form {
+        width: 70%;
+    }
 }
