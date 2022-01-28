@@ -5,9 +5,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import Header from '../components/Header';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
-import ErrorBoundry from '../components/ErrorBoundry';
+import ErrorBoundry from '../components/errors/ErrorBoundry';
 import { actionCreators } from '../state/index';
-import SignIn from '../components/auth/SignIn';
+import SignIn from '../components/auth/signin/SignIn';
  
 
 function App() {
