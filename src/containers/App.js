@@ -2,12 +2,13 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import { bindActionCreators } from 'redux';
 import { useSelector, useDispatch } from 'react-redux';
+import { actionCreators } from '../state/index';
 import Header from '../components/header/Header';
 import CardList from '../components/card/CardList';
 import SearchBox from '../components/header/search/SearchBox';
 import ErrorBoundry from '../components/errors/ErrorBoundry';
-import { actionCreators } from '../state/index';
 import SignIn from '../components/auth/signin/SignIn';
+import Register from '../components/auth/register/Register';
  
 
 function App() {
@@ -54,11 +55,17 @@ function App() {
                 </div>
             </div>
             )
-        : (
+        : (route === "signin") 
+        ? (
             <div>
                 <SignIn onRouteChange={onRouteChange}/>
             </div>
         )
+        : (
+            <div>
+                <Register onRouteChange={onRouteChange}/>
+            </div>
+        );
 
 }
 
