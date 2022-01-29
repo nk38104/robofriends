@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.css';
 import React, { useEffect, useState } from 'react';
 import { bindActionCreators } from 'redux';
 import { useSelector, useDispatch } from 'react-redux';
@@ -45,10 +45,11 @@ function App() {
         ? (
             <div className="tc">
                 <Header>
-                    <h1 className="brand">RoboFriends</h1>
+                    <h1 className={styles.brand}>RoboFriends</h1>
                     <SearchBox searchChange={(e) => setSearchField(e.target.value)} />
+                    <button className={styles.signoutButton} onClick={() => onRouteChange("signin")}></button>
                 </Header>
-                <div className="main">
+                <div className={styles.main}>
                     <ErrorBoundry>
                         <CardList robots={filteredRobots}/>
                     </ErrorBoundry>
@@ -57,14 +58,10 @@ function App() {
             )
         : (route === "signin") 
         ? (
-            <div>
-                <SignIn onRouteChange={onRouteChange}/>
-            </div>
+            <SignIn onRouteChange={onRouteChange}/>
         )
         : (
-            <div>
-                <Register onRouteChange={onRouteChange}/>
-            </div>
+            <Register onRouteChange={onRouteChange}/>
         );
 
 }
